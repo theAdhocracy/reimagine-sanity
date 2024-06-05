@@ -20,7 +20,7 @@ export const global = defineType({
     }),
     defineField({
       title: 'Logo',
-      name: 'logo',
+      name: 'footer_logo',
       type: 'array',
       of: [{type: 'media'}],
       validation: (rule) => rule.required().max(1),
@@ -28,19 +28,19 @@ export const global = defineType({
     }),
     defineField({
       title: 'Description',
-      name: 'description',
+      name: 'footer_description',
       type: 'string',
       group: 'footer',
     }),
     defineField({
       title: 'Newsletter Title',
-      name: 'newsletter',
+      name: 'footer_newsletter',
       type: 'string',
       group: 'footer',
     }),
     defineField({
       title: 'Social Links',
-      name: 'socials',
+      name: 'footer_socials',
       type: 'array',
       description: 'Links to currently active social media services and third party sites.',
       of: [{type: 'social_link'}],
@@ -48,7 +48,7 @@ export const global = defineType({
     }),
     defineField({
       title: 'Menus',
-      name: 'menus',
+      name: 'footer_menus',
       type: 'array',
       description: 'Columns of links with a heading.',
       of: [{type: 'menu'}],
@@ -56,13 +56,13 @@ export const global = defineType({
     }),
     defineField({
       title: 'Copyright',
-      name: 'copyright',
+      name: 'footer_copyright',
       type: 'string',
       group: 'footer',
     }),
     defineField({
       title: 'Terms & Conditions',
-      name: 'terms',
+      name: 'footer_terms',
       type: 'array',
       description: 'A list of links to legal and miscellaneous pages.',
       of: [{type: 'menu'}],
